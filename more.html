@@ -51,10 +51,10 @@
 
     // 1. Get form values
     const formData = {
-      full_name: document.getElementById('name').value,
+      name: document.getElementById('name').value,
       email: document.getElementById('email').value,
-      phone_number: document.getElementById('tel').value,
-      feed_back: document.querySelector('input[name="choice"]:checked')?.value || null
+      tel: document.getElementById('tel').value,
+      choice: document.querySelector('input[name="choice"]:checked')?.value || null
     }
 
     // 2. Insert into Supabase table
