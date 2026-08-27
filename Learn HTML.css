@@ -1,0 +1,88 @@
+body{ 
+    background-color:none;
+    font-family:"Times New Roman" ;
+    font-variant:small-caps;
+}
+
+fieldset{ 
+    background-color:#063449; 
+    color:#aaa139;
+    font-variant:normal ;
+}
+
+wh{
+    color:White ;
+}
+
+gr{ 
+    color:#d223b5; 
+}
+
+tru{
+    color:#1100ff ;
+}
+
+button{
+    background-color: #2a2369; 
+    color:#ffeaea; 
+    transition:2s ; 
+    border:none ; 
+    width:64px; 
+    height:32px; 
+    margin-left:0.5em ; 
+    border-radius:6px ;
+}
+.dd {
+      position: relative;
+      display: inline-block;
+}
+.dd-btn {
+      padding:0px;
+      text-align: center;
+      background:none;
+      height:3em ;
+      width:2em ;
+      border: none;
+      color: #f8f9f9;
+}
+.dd-content {
+      position: absolute;
+      display: none;
+      width: 0%;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+}
+.dd:hover > .dd-content {
+      display: block;
+}
+.dd-content > a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: black;
+      margin-top:4em ;
+}
+.dd-content > a:hover {
+      color: #0003ff ;
+      background: #6a78ff ;
+      border-radius: 0px 20px 20px 0px ;
+}
+tab{
+    color:#0003ff;
+    position : fixed ;
+    top:0em ;
+    background-color:#009049;
+    height: 2em ;
+    left: 0em;
+    right:0em ;
+    font-size:2em;
+    text-transform:uppercase ;
+    border-style-bottom:solid;
+    border-radius: 0em 0em 0.5em 0.5em;
+}
+.panel{
+    background-color:#064043;
+    color:White ;
+    text-align:center;
+    border-radius:8px;
+    margin-bottom:16px ;
+    } 
