@@ -1,0 +1,41 @@
+function copy(id){
+
+const text=document.getElementById(id).innerText;
+navigator.clipboard.writeText(text);}
+
+
+
+const themes = [
+      {bg: "#1a1a2e", text: "#e94560"},
+      {bg: "#f8b500", text: "#222831"}
+    ];
+    let i = 0;
+
+    // 1. When page loads, check if we saved a theme before
+    window.onload = function() {
+      const savedTheme = localStorage.getItem("myTheme");
+      if (savedTheme) {
+        const theme = JSON.parse(savedTheme);
+        applyTheme(theme.bg, theme.text);
+
+        // set i to the right index so next click continues the cycle
+        i = themes.findIndex(t => t.bg === theme.bg);
+      }
+    }
+
+    // 2. Change theme and save it
+    function changeTheme() {
+      const theme = themes[i];
+      applyTheme(theme.bg, theme.text);
+
+      // save to browser memory
+      localStorage.setItem("myTheme", JSON.stringify(theme));
+
+      i = (i + 1) % themes.length;
+    }
+
+    function applyTheme(bg, text) {
+      document.body.style.backgroundColor = bg;
+      document.body.style.color = text;
+    }
+   
