@@ -58,7 +58,7 @@
     }
 
     // 2. Insert into Supabase table
-    const { error } = await supabase.from('registration form').insert([formData])
+    const { error } = await supabase.from('Registration form').insert([formData])
 
     // 3. Show result
     if (error) { 
