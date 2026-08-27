@@ -54,7 +54,7 @@
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       tel: document.getElementById('tel').value,
-      choice: document.querySelector('input[name="choice"]:checked')?.value || null
+      choice: document.querySelector('input[name="choice"]:radio')?.value || null
     }
 
     // 2. Insert into Supabase table
