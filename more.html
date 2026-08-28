@@ -97,19 +97,19 @@
   const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
   document.getElementById('upload').addEventListener('submit', async (e) => {
-    e.preventDefault()
-    alert('Submitting...')
+  e.preventDefault()
+  alert('Submitting...')
 
-const file = document.getElementById('receipt_url').files[0]
+  const file = document.getElementById('receipt_url').files[0]
   if(!file) {
     alert('Please upload proof of payment')
     return
   }
 
-  // 1. Upload to RECEIPT bucket
+  // 1. Upload to RECEIPT bucket - ALL CAPS
   const fileName = Date.now() + '-' + file.name 
   const { data, error: uploadError } = await supabase.storage
- .from('Receipt')
+ .from('RECEIPT') // <-- FIXED: was 'Receipt'
  .upload(fileName, file)
 
   if(uploadError) {
@@ -118,29 +118,28 @@ const file = document.getElementById('receipt_url').files[0]
   }
   
   // 2. Get public URL
-  const { data: urlData } = supabase.storage.from('Receipt').getPublicUrl(fileName)
+  const { data: urlData } = supabase.storage.from('RECEIPT').getPublicUrl(fileName) // <-- FIXED
   const receiptUrl = urlData.publicUrl
 
+  // 3. Get form values
+  const formData = {
+    full_name: document.getElementById('full_name').value,
+    email: document.getElementById('e_mail').value,
+    phone_number: document.getElementById('phone_no').value,
+    receipt_url: receiptUrl
+  }
 
+  // 4. Insert into Supabase table
+  const { error } = await supabase.from('Payment').insert([formData]) // <-- Change to 'Registration form' if that's your table
 
-    // 1. Get form values
-    const formData = {
-      full_name: document.getElementById('full_name').value,
-      email: document.getElementById('e_mail').value,
-      phone_number: document.getElementById('phone_no').value,
-      receipt_url: receiptUrl
-    }
-
-    // 2. Insert into Supabase table
-    const { error } = await supabase.from('Payment').insert([formData])
-
-    // 3. Show result
-    if (error) { 
-      alert('Error: ' + error.message) 
-    } else { 
-      alert('Your receipt upload is Successfully ✔️.   You will get feed back within 48 hours.') 
-    }
-  })
+  // 5. Show result
+  if (error) {
+    alert('Error: ' + error.message)
+  } else {
+    alert('Your receipt upload is Successfully ✔️ . You will get feedback within 48 hours.')
+    document.getElementById('upload').reset()
+  }
+})
     <script src="Learn HTML.js"></script>
 </body>
 </html>
