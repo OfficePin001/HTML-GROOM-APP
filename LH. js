@@ -1,4 +1,3 @@
-
 function copy(id){
 
 const text=document.getElementById(id).innerText;
