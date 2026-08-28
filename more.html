@@ -21,6 +21,9 @@
                 <br><br>
                 <label for="e-mail">E-MAIL :</label>
                 <input type="email" placeholder="htmlgroom123@gmail.com" style="text-transform:lowercase" id="email" required >
+              <br><br>
+<label for="password">PASSWORD :</label>
+                <input type="password" placeholder="password" required>
                 <br><br>
                 <label for="phone number ">PHONE NO :</label>
                 <input type="tel" placeholder="+234*********" style="text-transform:uppercase" id="tel" required >
@@ -54,6 +57,7 @@
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       tel: document.getElementById('tel').value,
+       password: document.getElementById('password').value,
       choice: document.querySelector('input[name="choice"]:checked')?.value || null
     }
 
