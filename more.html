@@ -68,6 +68,80 @@
     }
   })
 </script>
+
+ <!-- optional form-->
+    <form id="upload">
+        <div class="panel">
+            <br><br>
+            <label for="full name">NAMES :</label>
+                <input type="text" placeholder="html groom" style="text-transform:uppercase" id="full_name"required >
+                <br><br>
+                <label for="e-mail">E-MAIL :</label>
+                <input type="email" placeholder="htmlgroom123@gmail.com" style="text-transform:lowercase" id="e_mail" required >
+                <br><br>
+                <label for="phone number ">PHONE NO :</label>
+                <input type="tel" placeholder="+234*********" style="text-transform:uppercase" id="phone_no" required >
+                <br><br>
+                <input type="file" id="proof" required>
+                <br><br><br><br>
+                <input type="submit" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864 ; border-radius:8px;">&nbsp&nbsp
+                    <input type="reset" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864; border-radius:8px;">
+                <br><br>
+        </div>
+    </form>
+   <script type="module">
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+
+  const SUPABASE_URL = 'https://vgriftecqunhbyutashg.supabase.co'
+  const SUPABASE_KEY = 'sb_publishable_bqcqtp_R5ltcbRFefOykAw_DplWSCk7'
+  const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+  document.getElementById('upload').addEventListener('submit', async (e) => {
+    e.preventDefault()
+    alert('Submitting...')
+
+const file = document.getElementById('proof').files[0]
+  if(!file) {
+    alert('Please upload proof of payment')
+    return
+  }
+
+  // 1. Upload to RECEIPT bucket
+  const fileName = Date.now() + '-' + file.name 
+  const { data, error: uploadError } = await supabase.storage
+ .from('receipt_url')
+ .upload(fileName, file)
+
+  if(uploadError) {
+    alert('Upload error: ' + uploadError.message)
+    return
+  }
+  
+  // 2. Get public URL
+  const { data: urlData } = supabase.storage.from('receipt_url').getPublicUrl(fileName)
+  const proofUrl = urlData.publicUrl
+
+
+
+    // 1. Get form values
+    const formData = {
+      full_name: document.getElementById('full_name').value,
+      email: document.getElementById('e_mail').value,
+      phone_number: document.getElementById('phone_no').value,
+      feed_back: document.querySelector('input[name="choice"]:checked')?.value || null, 
+      proof_url: proofUrl
+    }
+
+    // 2. Insert into Supabase table
+    const { error } = await supabase.from('Payment').insert([formData])
+
+    // 3. Show result
+    if (error) { 
+      alert('Error: ' + error.message) 
+    } else { 
+      alert('Your receipt upload is Successfully ✔️.   You will get feed back within 48 hours.') 
+    }
+  })
     <script src="Learn HTML.js"></script>
 </body>
 </html>
