@@ -27,11 +27,17 @@
                 <br><br>
                 <label>DID YOU ENJOY LEARNING FROM HTML GROOM? </label>
                 <br><br>
-                <input type="radio" id="yes" name="choice">
-                <label for="yes">YES</label>
-                &nbsp&nbsp
-                <input type="radio" id="no" name="choice">
-                <label for="no">NO</label>
+                <select name="choice" required >
+                    <option>
+                        
+                    </option>
+                    <option>
+                        YES
+                    </option>
+                    <option>
+                        NO
+                    </option>
+                </select>
                 <br><br><br><br>
                 <input type="submit" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864 ; border-radius:8px;">&nbsp&nbsp
                     <input type="reset" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864; border-radius:8px;">
@@ -54,7 +60,7 @@
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       tel: document.getElementById('tel').value,
-      choice: document.querySelector('input[name="choice"]:radio')?.value || null
+      choice: document.querySelector('input[name="choice"]:checked')?.value || null
     }
 
     // 2. Insert into Supabase table
