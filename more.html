@@ -82,7 +82,7 @@
                 <label for="phone number ">PHONE NO :</label>
                 <input type="tel" placeholder="+234*********" style="text-transform:uppercase" id="phone_no" required >
                 <br><br>
-                <input type="file" id="proof" required>
+                <input type="file" id="receipt_url" required>
                 <br><br><br><br>
                 <input type="submit" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864 ; border-radius:8px;">&nbsp&nbsp
                     <input type="reset" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864; border-radius:8px;">
@@ -100,7 +100,7 @@
     e.preventDefault()
     alert('Submitting...')
 
-const file = document.getElementById('proof').files[0]
+const file = document.getElementById('receipt_url').files[0]
   if(!file) {
     alert('Please upload proof of payment')
     return
@@ -109,7 +109,7 @@ const file = document.getElementById('proof').files[0]
   // 1. Upload to RECEIPT bucket
   const fileName = Date.now() + '-' + file.name 
   const { data, error: uploadError } = await supabase.storage
- .from('receipt_url')
+ .from('Receipt')
  .upload(fileName, file)
 
   if(uploadError) {
@@ -118,8 +118,8 @@ const file = document.getElementById('proof').files[0]
   }
   
   // 2. Get public URL
-  const { data: urlData } = supabase.storage.from('receipt_url').getPublicUrl(fileName)
-  const proofUrl = urlData.publicUrl
+  const { data: urlData } = supabase.storage.from('Receipt').getPublicUrl(fileName)
+  const receiptUrl = urlData.publicUrl
 
 
 
@@ -128,8 +128,7 @@ const file = document.getElementById('proof').files[0]
       full_name: document.getElementById('full_name').value,
       email: document.getElementById('e_mail').value,
       phone_number: document.getElementById('phone_no').value,
-      feed_back: document.querySelector('input[name="choice"]:checked')?.value || null, 
-      proof_url: proofUrl
+      receipt_url: receiptUrl
     }
 
     // 2. Insert into Supabase table
