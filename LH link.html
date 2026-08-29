@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <link rel="stylesheet" href="Learn HTML.css">
+</head>
+<body>
+    <h4>
+        <center>
+        IN THIS CLASS WE WILL LEARN ABOUT LINKS
+        </center>
+    </h4><hr>
+    <div>
+        <h5>What is a link?</h5>
+        <p>Link is a connection between files, pages and other browsers.</p>
+        <p>
+            Link exist in different form, for example the most popularly know links has "https" this shows that the link is secured, links with "http" are mostly local host link like the ones in your code editor before it is hosted publicly, links with "www" are world wide website links that can be viewed anywhere. Although, links in html is similar to that, the only difference is you cannot just add links to your code on it own, you have to follow some procedures, like knowing the correct tag and attributes to use. Attributes are features inside a tag for content element tags the attributes are contained inside the opening tag. </br>E.g </br><</span>a href="www.facebook.com" target="example"><</span>/a> (for content element tags)</br> <</span>img src="image.jpg" alt="coding"/> (for empty element tags). 
+        </p>  
+        <p>
+            Let's move further. 
+        </p>
+    </div>
+    <div>
+        <p>
+            We are familiar with the anchor tag (<</span>a><</span>/a>). The anchor tag is use to link pages together, either your page or an external page. But most time if you are to link your own page, the page must be in the same folder and you are not advised to use the local host address of that page to prevent errors when you want to host your code publicly. 
+            <p>
+                While using the anchor tag we have to include an attribute known as the 'hyper text reference' (href) in this form [href=" "] in between the double quote you will add the link to your page.
+            </p>
+            <p>
+            <span>example</span>
+            <img src="folder.jpg" alt="" style="height:18em ; width:20em ; border-style:solid ;"></br>
+            <span>If this is our folder and we want to link our current page as shown in the image to the next page we will have to make use of the anchor tag. </span>
+            </p>
+            <fieldset>
+        <code id="example">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title><wh>example</wh><<span>/title><br>
+            <<span>/head><br>
+            <<spsn>body><br>
+                &nbsp&nbsp&nbsp<<span>div><br>
+                    &nbsp&nbsp&nbsp&nbsp<<span>a <wh>href=</wh><gr>"next page.html"</gr>><wh>link</wh><</span>/a><br>
+                   &nbsp&nbsp&nbsp<<span>/div><br>
+                
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('example')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <span>current page</span>
+    <fieldset style="background-color:White ; height:10em;">
+        <div>
+            <a href="a.html" target="a">link</a>
+        </div>
+    </fieldset>
+    <br>
+    <span>next page</span>
+    <fieldset style="background-color:White ; height:10em;">
+        <iframe name="a" style="height:10em ; width:19.5em ;"></iframe>
+    </fieldset>
+    <br>
+    <p>
+        This method is not only for connecting pages in your folder but you can also use it to connect pages on Internet and also refer people to your contact page link like your Email, WhatsApp, Call, Telegram, Facebook and many more. In this example it will direct you to an Internet page. <b>This example requires internet connection.</b>
+    </p>
+    <fieldset>
+        <code id="google">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title><wh>example</wh><<span>/title><br>
+            <<span>/head><br>
+            <<spsn>body><br>
+                &nbsp&nbsp&nbsp<<span>div><br>
+                    &nbsp&nbsp&nbsp&nbsp<<span>a <wh>href=</wh><gr>"https://mastermind-d7x1.vercel.app/"</gr>><wh>Take me there</wh><</span>/a><br>
+                   &nbsp&nbsp&nbsp<<span>/div><br>
+                
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('google')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <span>current page</span>
+    <fieldset style="background-color:White ; height:10em;">
+        <div>
+            <a href="https://mastermind-d7x1.vercel.app/ " target="b">Take me there</a>
+        </div>
+    </fieldset>
+    <br>
+    <span>internet page</span>
+    <fieldset style="background-color:White ; height:10em;">
+        <iframe name="b" style="height:10em ; width:19.5em ;"></iframe>
+    </fieldset>
+    <span>now with this idea you already know how to link pages together.</span>
+    <br>
+    <div>
+        <h3>
+            Now let's to link another external file, like the our cascading stylesheet (CSS)
+            </h3> 
+            </p>
+            This is a file that gives our html file beauty and some special features, you will learn about CSS after you have finished learning html. Now to link your CSS file to your html file you have to use this empty content tag called the link tag (<</span>link/>). It is not used for css only but others like fonts and favicon (Web icons). 
+       </p>
+       <p>
+           In addition, for link we don't make use of href attribute only we also make use of the attribute called Relationship (rel=" "), the Type attribute (type=" ") and Media (media=" ") this attributes tells the browser what you want your link to be. But here we will make use of " href, rel and type". 
+       </p>
+    </div>
+    <span>css code (name: our.css)</span>
+    <br>
+    <fieldset>
+        <code id="css">
+            <pre>
+<gr>body</gr><wh>{</wh>
+      background-color:<wh>blue</wh> ;</br>
+      color:<wh>yellow</wh> ;
+<wh>}</wh>
+            </pre>
+        </code>
+    </fieldset>
+    <button onclick="copy('css')">copy</button>
+    <br>
+    <br>
+    <p>
+        <u style="text-decoration-style:double ;">NOTE: </u>&nbsp<span> The link tag must be in the head, because it is a css file it will help the css to load fast before the html appears on the screen.</span>
+    </p>
+    <span>html code</span>
+    <br>
+    <fieldset>
+        <code id="html">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title><wh>example</wh><<span>/title><br>
+                <</span>link <wh>rel=</wh><gr>"stylesheet"</gr> <wh>href=</wh><gr>"our.css"</gr> <wh>type=</wh><gr>"text/css"</gr>></br>
+            <<span>/head><br>
+            <<spsn>body><br>
+                &nbsp&nbsp&nbsp<<span>p>
+                    <p>
+           <wh> Because the background color is set to blue that is why it is blue but the color (which by default is the text color) is yellow, that is why it displays yellow. </wh>
+        </p>
+                    <br>
+                   &nbsp&nbsp&nbsp<<span>/p><br>
+                
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('html')">copy</button>
+    <br>
+    <br>
+    <span>html page</span>
+    <fieldset style="background-color:blue ; color:yellow ; height:10em;">
+        <p>
+            Because the background color is set to blue that is why it is blue but the color (which by default is the text color) is yellow, that is why it displays yellow. 
+        </p>
+    </fieldset>
+    <p>
+        Now you are familiar with the link tag and how it works, so let's move to learning how to connect our Javascript file to our html file. 
+    </p>
+    <p>
+        But while connecting our javascript file to our html file we use the script (<<span>script><<span>/script>)tag. Also, we don't use the hyper text reference attribute, we use the source (src=" ") attribute. This attribute connects our javascript file to the html file without it being in the html code. 
+    </p>
+    <br>
+    <p>
+        <u style="text-decoration-style:double ;">NOTE: </u>&nbsp<span> The script tag must be nested inside the body tag either immediately after the opening body tag or immediately before the closing body tag, this will help the javascript to load along side the html in order to prevent errors or slow response.</span>
+    </p> 
+    <br>
+    <span>Javascript code (name: our.js)</span>
+    <br>
+    <fieldset>
+        <code id="js">
+            <pre>
+<bl>function</bl> <gr>copy(){</gr>
+
+<bl>const</bl><wh>text</wh><gr>=</gr></br>document<gr>.getElementById(<wh>id</wh>)</br>.</gr><wh>innerText<gr>;</gr></wh>
+<wh>navigator</wh><gr>.</gr><wh>clipboard</wh></br><gr>.writeText(<wh>text</wh>);}</gr>
+            </pre>
+        </code>
+    </fieldset>
+    <button onclick="copy('js')">copy</button>
+    <br>
+    <br>
+   <fieldset>
+        <code id="file">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title><wh>example</wh><<span>/title><br>
+                <</span>link <wh>rel=</wh><gr>"stylesheet"</gr> <wh>href=</wh><gr>"our.css"</gr> <wh>type=</wh><gr>"text/css"</gr>></br>
+            <<span>/head><br>
+            <<spsn>body><br>
+                &nbsp&nbsp&nbsp<<span>p <wh>id=</wh><gr>"text"</gr>>
+                    <p>
+           <wh> Because the background color is set to blue that is why it is blue but the color (which by default is the text color) is yellow, that is why it displays yellow. </wh>
+        </p>
+                    <br>
+                   &nbsp<<span>/p><br>
+                       <</span>button <wh>onclick=</wh><gr>"copy('text')"</gr>></br><wh>copy</wh><</span>/button>
+                   </br>
+                <</span>script <wh>src=</wh><gr>"our.js"</gr>><</span>/script>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('file')">copy</button>
+    <br><br>
+    <fieldset style="background-color:blue ; color:yellow ; height:10em;">
+        <p id="pro">
+            Because the background color is set to blue that is why it is blue but the color (which by default is the text color) is yellow, that is why it displays yellow. 
+        </p>
+        <input type="button" onclick="copy('pro')" value="copy">
+    </fieldset>
+    <br>
+    <div>
+        <h4>Tips you hardly get anywhere about links</h4>
+        <p>
+            <ol>
+                <li>
+                    To add your contact link to your html code you will use your anchor tag and it will be in this form. 
+                   <fieldset id="call">
+                       <</span>a <wh>href=</wh><gr>"tel:+234xxxxxxxxxx"</gr>><wh>call me</wh><</span>/a>
+                   </fieldset>
+                   <button onclick="copy('call')">copy</button>
+                </li><br>
+                <li>
+                    For your WhatsApp it will be in this form. You can also use it for other social medias like Facebook, Discord, Instagram and others. All you have to do is to replace the link with your page in the href. <fieldset id="what">
+                        <</span>a <wh>href=</wh><gr>"https://wa.me/234xxxxxxxxxx"</gr> <wh>target=</wh><gr>"_blank"</gr>><wh>WhatsApp me</wh><</span>/a>
+                    </fieldset>
+                    <button onclick="copy('what')">copy</button>
+                </li></br>
+                <li>
+                    For email
+                    <fieldset id="mail">
+                        <</span>a <wh>href=</wh><gr>"mailto:</br>youremailaddress123@gmail.com?"</gr>><wh></br>Email me</wh><</span>/a>
+                    </fieldset>
+                    <button onclick="copy('mail')">copy</button>
+                </li>
+            </ol>
+        </p>
+    </div>
+    </br></br>
+    <div>
+        <button style="position: absolute; right: 0em; text-decoration-line:none ; color: White; margin-right:1em ; background:#aaa139 ;"><a href="LH image.html" style="text-decoration-line:none ; color: White;">next</a></button>
+        <button style="background-color:#aaa139 ;"><a href="LH tags.html" style="text-decoration-line:none ; color: White;">previous</a></button>
+    </div> 
+    <br>
+    <script src="Learn HTML.js"></script>
+</body>
+</html>
