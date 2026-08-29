@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>more</title>
     <link rel="stylesheet" href="Learn HTML.css">
+<style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+    </style>
 </head>
 <body>
     <h4>
@@ -14,28 +22,47 @@
     </h4><hr>
     <!-- optional form-->
     <form id="update">
-        <div class="panel">
+        <div class="form-card">
+            <center>
+                <h2>update form</h2>
+            </center>
             <br><br>
-            <label for="full name">NAMES :</label>
+            <div class="form-group">
+            <label for="name">NAMES :</label>
+               </br>
                 <input type="text" placeholder="html groom" style="text-transform:uppercase" id="name"required >
+                </div>
                 <br><br>
+                <div class="form-group">
                 <label for="e-mail">E-MAIL :</label>
+                </br>
                 <input type="email" placeholder="htmlgroom123@gmail.com" style="text-transform:lowercase" id="email" required >
+                </div>
                 <br><br>
+                <div class="form-group">
                 <label for="phone number ">PHONE NO :</label>
+                </br>
                 <input type="tel" placeholder="+234*********" style="text-transform:uppercase" id="tel" required >
-                <br><br>
-                <label>DID YOU ENJOY LEARNING FROM HTML GROOM? </label>
-                <br><br>
+                </div>
+                <br>
+                <div class="radio-group">
+                <label style="text-transform:lowercase ; ">DID YOU ENJOY LEARNING FROM </br>HTML GROOM? </label>
+                <br>
+                <div class="radio-option">
                 <input type="radio" id="yes" name="choice" value="YES">
                 <label for="yes">YES</label>
                 &nbsp&nbsp
                 <input type="radio" id="no" name="choice" value="NO">
                 <label for="no">NO</label>
-                <br><br><br><br>
-                <input type="submit" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864 ; border-radius:8px;">&nbsp&nbsp
-                    <input type="reset" style="height:3em; width:8em; padding:1em 1em; color:black; background-color:#007864; border-radius:8px;">
-                <br><br>
+                </div>
+                </div>
+                <br>
+                <div class="btn-group">
+                <input type="submit" style="height:3em; width:16em; padding:1em 1em; color:White ; background-color:#007864; border-radius:8px;"><br><br>
+                    <input type="reset" style="height:3em; width:8em; padding:1em 1em; color:White ; background-color:transparent ; border-radius:8px;">
+                    </div>
+                    </div>
+                <br>
         </div>
     </form>
    <script type="module">
