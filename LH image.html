@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <link rel="stylesheet" href="Learn HTML.css">
+</head>
+<body>
+    <h4>
+        <center>
+        IN THIS CLASS WE WILL LEARN ABOUT IMAGES AND FIGURES 
+        </center>
+    </h4><hr>
+    </br>
+    <h4>
+        What is an image? 
+    </h4>
+    <div>
+        An image is the visual representation for anything. Images are needed for website development, it helps website to look attractive for visitors. Websites without images will definitely look boring to interact with. 
+    </div>
+    <div>
+        <p>
+           To add images to our page we have to make use of the source (src=" ") attributes. This source attribute could also be used to link images from external server. E.g
+        </p>
+        <fieldset>
+            <code>
+<</span>img<wh> src=</wh><gr>"https://google.image.com " </gr><wh>alt=</wh><gr>"google image"</gr>/>
+            </code>
+        </fieldset>
+    </div>
+    <p>
+        But for now, we are adding image from our folder. 
+    </p>
+    <div>
+        <p>
+        Example
+        </p>
+    <fieldset>
+        <code id="image">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+                &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+            <<span>/head><br>
+            <</span>body><br>
+            <br>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"image.jpg"</gr>><br>
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('image')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:10em;">
+        <div>
+            <img src="image.jpg" alt="image" width="314em"height="550em">
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        Images that doesn't display on the screen of the browser usually have an alternative text but this text is optional, It is also use to tell little information about the image if it does not shows. To add this text to the image we have to include an attribute to our image tag called Alternative (alt=" "). Take note, this text in the alternative attribute doesn't appear unless your images does not show because of the following cases, if it loads slowly, slow server, the image has been deleted from the directory or an invalid url in the source attribute (src=" "). 
+    </div>
+    <div>
+        <p>
+        Example
+        </p>
+    <fieldset>
+        <code id="alt">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+                &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+                
+            <<span>/head><br>
+            <</span>body><br>
+            <gr><<span>!-- image with alternative text value--></gr>
+            <br>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"imge.jpg"</gr><wh>alt=</wh><gr>"image of html vs css"</gr>><br>
+                    <<span>br/>
+                        <br>
+                    <gr><<span>!-- image without alternative text value--></gr>
+                    <br>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"imge.jpg"</gr><wh>alt=</wh><gr>" "</gr>><br>
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('alt')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:19.5em; color:black ; ">
+        <div>
+            <!-- image with alternative text value -->
+            </br>
+            <img src="imge.jpg" alt="image of html vs css" width="314em"height="550em">
+            </br>
+            <!-- image without alternative text value-->
+             <img src="imge.jpg" alt=" " width="314em"height="550em"> 
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <p>
+            The image was broken because of invalid url, also in the first image there is a text value while the other does not have a text value. This justifys that the alternative in not necessary but it will help your user to have idea of what type of image is meant to be displayed. 
+        </p>
+    </div>
+    <div>
+        Now, do you observed that in our first example of image, our image does not have a definite size, this is where these attributes width=" " and height=" " comes in to play. They give the specific size to our image. 
+    </div>
+    <div>
+        <p>
+        Example
+        </p>
+    <fieldset>
+        <code id="single">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+                &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+                
+            <<span>/head><br>
+            <</span>body><br>
+            <br>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"image.jpg"</gr><wh>alt=</wh><gr>"image of html vs css"</gr><wh>width=</wh><gr>"130px"</gr><wh>height=</wh><gr>"190px"</gr>>          
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('single')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:19.5em;">
+        <div>
+         
+            </br>
+            <img src="image.jpg" alt="image of html vs css" width="130em" height="190em">
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <p>
+            Now the image displayed, has a definite size with the help of height and width, also these attributes are attributes the style tag in html. You will learn more about it in CASCADING STYLESHEET (CSS) class. 
+        </p>
+        <p>
+            While using the style tag for image we use it as an attribute (style=" "). But the output for both attribute width, height and nested attributed width, height will be the same. 
+        </p>
+    </div>
+      <div>
+        <p>
+        Example
+        </p>
+    <fieldset>
+        <code id="attr">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+.                &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+                
+            <<span>/head><br>
+            <</span>body><br>
+            <br>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"image.jpg"</gr><wh>alt=</wh><gr>"image of html vs css" </gr><wh>style=</wh><gr>"width:130px; height:190px;"</gr>>            
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('attr')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:19.5em;">
+        <div>
+         
+            </br>
+            <img src="image.jpg" alt="image of html vs css" style="width:130px; height:190px ;">
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        To conclude on images, they can be used as links. In this case instead for using text we make use of image tag by nesting it inside the anchor tag. 
+    </div>
+    <div>
+        <p>
+            Example
+        </p>
+        <span>Click the image</span>
+        <fieldset>
+        <code id="imglink">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title><wh>example</wh><<span>/title><br>
+            <<span>/head><br>
+            <<spsn>body><br>
+                &nbsp&nbsp&nbsp<<span>div><br>
+                    &nbsp&nbsp&nbsp&nbsp<<span>a <wh>href=</wh><gr>"next page.html"</gr>><<span>img <wh>src=</wh><gr>"image.jpg"</gr><wh>alt=</wh><gr>"image of html vs css" </gr><wh>style=</wh><gr>"width:130px; height:190px;"</gr>><</span>/a><br>
+                   &nbsp&nbsp&nbsp<<span>/div><br>
+                
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('imglink')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <span>current page</span>
+    <fieldset style="background-color:White ;">
+        <div>
+            <a href="a.html" target="a"> <img src="image.jpg" alt="image of html vs css" style="width:130px; height:190px ;"></a>
+        </div>
+    </fieldset>
+    <br>
+    <span>next page</span>
+    <fieldset style="background-color:White ; height:10em;">
+        <iframe name="a" style="height:10em ; width:19.5em ;"></iframe>
+    </fieldset>
+    <br> 
+    </div>
+    <div>
+        <h3>
+            Next up Figures 
+        </h3>
+        <h4>
+            What is a figure. 
+        </h4>
+        <p>
+            Figure in html is a self-contained content and typically referenced as a single unit. It can be an image, diagram, illustration and lot more. 
+        </p>
+        <p>
+            The figure could have a caption attached to it or have it to be alone. The figure tag (<</span>figure><</span>/figure>) and it caption tag (<</span>figcaption><</span>/figcaption>) are both content element tags. The image, diagram, etc goes in the figure tag while the text goes in the caption tag. 
+        </p>
+    </div>
+     <div>
+        <p>
+        Example
+        </p>
+    <fieldset>
+        <code id="coder">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+              &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+                
+            <<span>/head><br>
+            <</span>body><br>
+            <br>
+            <</span>figure>
+             &nbsp&nbsp&nbsp&nbsp<<span>img <wh>src=</wh><gr>"code.jpg"</gr><wh>alt=</wh><gr>"image of a programmer " </gr><wh>style=</wh><gr>"width:230px; height:190px;"</gr>>       
+             <</span>figcaption><wh>figure 1.1 Programming language</wh> <</span>/figcaption></br>
+             <</span>/figure>
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('coder')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:19.5em; color:black ;">
+        <div>
+         
+            <figure>
+            <img src="coding.jpg" alt="image of a programmer " style="width:230px; height:195px ;">
+            <figcaption>figure 1.1 Programming language </figcaption>
+            </figure>
+            </br>
+        </div>
+    </fieldset>
+    </div></br>
+    <p>
+        The figure tags can also be used in text as stated earlier, in this example is a poem by Robert Frost titled The Road Not Taken. 
+    </p>
+    <div>
+        <p>
+        Example
+        </p>
+    <fieldset style="overflow:auto ; height:20em ; ">
+        <code id="textfig">
+            <<span>!DOCTYPE<wh> html</wh>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr>><br>
+            <<span>head><br>
+                &nbsp&nbsp <<span>meta <wh>charset=</wh><gr>"UTF-8"</gr>><br>
+              &nbsp&nbsp <<span>title><wh>Page title</wh><<span>/title><br>
+                
+            <<span>/head><br>
+            <</span>body><br>
+            <br>
+            <</span>figure>
+    <wh>Two roads diverged in a yellow wood, <br />
+    And sorry I could not travel both <br />
+    And be one traveler, long I stood <br />
+    And looked down one as far as I could <br />
+    To where it bent in the undergrowth; <br />
+    Then took the other, as just as fair, <br />
+    And having perhaps the better claim, <br />
+    Because it was grassy and wanted wear; <br />
+    Though as for that the passing there <br />
+    Had worn them really about the same, <br />
+    And both that morning equally lay <br />
+    In leaves no step had trodden black. <br />
+    Oh, I kept the first for another day! <br />
+    Yet knowing how way leads on to way, <br />
+    I doubted if I should ever come back. <br />
+    I shall be telling this with a sigh <br />
+    Somewhere ages and ages hence: <br />
+    Two roads diverged in a wood, and I- <br />
+    I took the one less traveled by, <br />
+    And that has made all the difference. <br /></wh>
+  <</span>/figure>    
+  <</span>figcaption><</span>i> <wh>The Road Not Taken </wh><</span>/i> <wh>By: Robert Frost </wh><</span>/figcaption>
+                    <br>
+            <<span>/body><br>
+            <<span>/html><br>
+        </code>
+    </fieldset>
+    <button onclick="copy('textfig')">copy</button>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; overflow:auto ; height:15em; width:19.5em; color: black;">
+        <div>
+            <figure>
+    Two roads diverged in a yellow wood, <br />
+    And sorry I could not travel both <br />
+    And be one traveler, long I stood <br />
+    And looked down one as far as I could <br />
+    To where it bent in the undergrowth; <br />
+    Then took the other, as just as fair, <br />
+    And having perhaps the better claim, <br />
+    Because it was grassy and wanted wear; <br />
+    Though as for that the passing there <br />
+    Had worn them really about the same, <br />
+    And both that morning equally lay <br />
+    In leaves no step had trodden black. <br />
+    Oh, I kept the first for another day! <br />
+    Yet knowing how way leads on to way, <br />
+    I doubted if I should ever come back. <br />
+    I shall be telling this with a sigh <br />
+    Somewhere ages and ages hence: <br />
+    Two roads diverged in a wood, and I- <br />
+    I took the one less traveled by, <br />
+    And that has made all the difference. <br />
+  </figure>    
+  <figcaption><cite> The Road Not Taken </cite> By: Robert Frost </figcaption>
+            </br>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <button style="position: absolute; right: 0em; text-decoration-line:none ; color: White; margin-right:1em ; background:#aaa139 ;"><a href="LH heading.html" style="text-decoration-line:none ; color: White;">next</a></button>
+        <button style="position: absolute; left: 0em; text-decoration-line:none ; color: White; margin-left:1em ; background:#aaa139 ;" style="background-color:#aaa139 ;"><a href="LH link.html" style="text-decoration-line:none ; color: White;">previous</a></button>
+    </div>
+    <br></br>
+    <script src="Learn HTML.js"></script>
+</body>
+</html>
