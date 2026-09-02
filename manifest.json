@@ -1,18 +1,12 @@
 {
-  "name": "Learn HTML",
-  "short_name": "Learn HTML",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512", 
-      "type": "image/png"
-    }
-  ],
+  "name": "HTML Groom",
+  "short_name": "HTML Groom",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "background_color": "#0e0e0e",
+  "theme_color": "#007864",
+  "icons": [
+    {"src": "/icon-192.png","sizes": "192x192","type": "image/png"},
+    {"src": "/icon-512.png","sizes": "512x512","type": "image/png"}
+  ]
 }
