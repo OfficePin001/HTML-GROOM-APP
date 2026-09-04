@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML GROOM</title>
+    <link rel="stylesheet" href="Learn HTML.css">
+</head>
+<body>
+    <h4>
+        <center>
+        IN THIS CLASS WE WILL LEARN ABOUT SUBSCRIPT, SUPERSCRIPT, PREFORMATTING TEXT 
+        </center>
+    </h4><hr>
+    <div>
+        <h4>
+            What is subscript and superscript? 
+        </h4>
+        <p>
+            Subscript renders lower baseline and small texts while superscript renders raised baseline and small texts. This texts are rarely used only on special cases. 
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="sub">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <gr><</span>!-- The subscript --></gr></br>
+            <</span>p><wh>The subscript</wh> <</span>/p></br></br>
+              <</span>p><wh> N</wh><</span>sub><wh>2</wh><</span>/sub><wh> + H</wh><</span>sub><wh>2</wh><</span>/sub> <wh>&</span>rarr; NH</wh><</span>sub><wh>3</wh></sub><</span>/p></br></br>
+  <</span>p><wh> N</wh><</span>sub><wh>2</wh><</span>/sub> <wh>+ H</wh><</span>sub><wh>2</wh><</span>/sub> <wh>&</span>rarr; 2NH</wh><</span>sub><wh>3</wh><</span>/sub><</span>/p><</span>br/></br></br>
+            <gr><</span>!-- The superscript --></gr></br>
+            <</span>p><wh>The superscript</wh> <</span>/p></br></br>
+            <</span>p> <wh>= x</wh><</span>sup><wh>3</wh><</span>/sup> <wh>+ 3x + 2x</wh><</span>sup><wh>2</wh><</span>/sup><wh> + 6 </wh><</span>/p></br></br>
+  <</span>p> <wh>= x</wh><</span>sup><wh>3</wh><</span>/sup><wh> + 2x</wh><</span>sup><wh>2</wh><</span>/sup> <wh>+ 3x + 6</wh> <</span>/p><</span>br/></br>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('sub')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; color:black ;">
+        <div>
+            <!-- The subscript -->
+            <p>The subscript </p>
+              <p> N<sub>2</sub> + H<sub>2</sub> &rarr; NH<sub>3</sub></p>
+  <p> N<sub>2</sub> + H<sub>2</sub> &rarr; 2NH<sub>3</sub></p></br>
+            <!-- The superscript -->
+            <p>The superscript </p>
+            <p> = x<sup>3</sup> + 3x + 2x<sup>2</sup> + 6 </p>
+  <p> = x<sup>3</sup> + 2x<sup>2</sup> + 3x + 6 </p>
+        </div>
+    </fieldset>
+    </div>
+    <div>
+        <h4>
+            What is a preformatting text? 
+        </h4>
+        <p>
+            Preformatting text is the <</span>pre> elements which renders texts exactly as it was written in your code editor. 
+        </p>
+    </div>
+    <div>
+         <fieldset>
+        <code id="pre">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+                <gr><</span>!-- This will not render the text exactly --></gr></br>
+        &nbsp&nbsp&nbsp   <</span>p></br>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <wh>  My</br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp      Name</br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp          Is</br>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp           John</br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp            Doe</wh></br>
+   &nbsp&nbsp&nbsp         <</span>/p></br>
+            <gr><</span>!-- This will render the text exactly --></gr></br>
+    &nbsp&nbsp&nbsp        <</span>pre></br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     <wh>       My</br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp            Name</br>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp           Is</br>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp           John </br>
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp           Doe</wh></br>
+     &nbsp&nbsp&nbsp       <</span>/pre></br>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('pre')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em;color:black ;">
+        <div>
+            <!-- This will not render the text exactly -->
+            <p>
+                My
+                Name
+                Is
+                John
+                Doe
+            </p>
+            <!-- This will render the text exactly -->
+            <pre>
+                My
+                Name
+                Is
+                John 
+                Doe
+            </pre>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <h4>
+            Let touch a little bit of content editable
+            </h4> 
+            <p>
+            Content editable is an attribute that does not require a value if it is inside the starting tag. It is a global attribute and it can have two possible values "true" or "false" this tells the editor if the content will be editable or not. 
+        </p>
+    </div>
+    <div>
+         <fieldset>
+        <code id="edit">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <</span>p <wh>contenteditable</wh>></br>
+            <wh>Hello World! I am an editable content, you can try to rewrite my content. </wh></br>
+            <</span>/p> 
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('edit')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em; color:black ;">
+        <div>
+            <p contenteditable>
+            Hello World! I am an editable content, you can try to rewrite my content. 
+            </p>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <button style="position: absolute; right: 0em; text-decoration-line:none ; color: White; margin-right:1em ; background:#aaa139 ;"><a href="LH video.html" style="text-decoration-line:none ; color: White;">next</a></button>
+        <button style="position: absolute; left: 0em; text-decoration-line:none ; color: White; margin-left:1em ; background:#aaa139 ;" style="background-color:#aaa139 ;"><a href="LH line br.html" style="text-decoration-line:none ; color: White;">previous</a></button>
+    </div>
+    <br></br>
+    <script src="Learn HTML.js"></script>
+</body>
+</html>
