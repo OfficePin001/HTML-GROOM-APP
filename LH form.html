@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML GROOM</title>
+    <link rel="stylesheet" href="Learn HTML.css">
+</head>
+<body>
+    <h4>
+        <center>
+        IN THIS CLASS WE WILL LEARN ABOUT HTML FORM
+        </center>
+    </h4><hr>
+    <div>
+        <h4>
+            What is a form? 
+        </h4>
+        <p>
+            Form is used to collect user data, it could be a login form,sign in form, feedback form and so many others. 
+        </p>
+        <p>
+            To define html form we have to make use of the <</span>form> tag, attributes of the form tag could be action, target, onSubmit, id, class, name, autocomplete, e.t.c
+        </p>
+        <p>
+            Elements which could be nested inside a form tag are:
+            <ul>
+                <li>Input tag</li>
+                <li>Label tag</li>
+                <li>Button tag</li>
+                <li>Textarea tag</li>
+                <li>Dropdown list element</li>
+            </ul>
+        </p>
+        <p>
+            Here in this class we will explain each tags and you will learn how to build a responsive website. 
+        </p>
+        <p>
+            To build a responsive website we will make use of the meta tag it is an empty content tag, it is nested in the head element 
+        </p>
+        <fieldset>
+            <code>
+                <</span>head></br>
+                    &nbsp&nbsp&nbsp <</span>meta/></br>
+                <</span>/head>
+            </code>
+        </fieldset>
+        </br>
+        <p>
+            If we want your website to respond to the size of any device we will have to add these attributes to the meta tag name and content. The name defines the function while the content performs the function. 
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="meta">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>/><br>
+                &nbsp&nbsp <</span>meta <wh>name=</wh><gr>"viewport"</gr></br><wh>content=</wh><gr>"width=device-width,</br> initial-scale=1.0"</gr></span>/></br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('meta')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em;">
+        <div>
+            
+        </div>
+    </fieldset></br>
+    </div>
+    <div>
+        <p>
+            It has no literal effect on the main screen but if we have a content in our page it will fit the size of any device, that is the main purpose of making our website responsive. 
+        </p>
+    </div>
+    <div>
+        <p>
+            Now let's proceed to our form elements, first we are going to begin with the input tag. 
+        </p>
+        <p>
+            The input tag allows the form to collect the users information. There are different input type we have the text, numbers, email, password, radio, check box and more. Let's see how the different types of input works. 
+        </p>
+        <p>
+            <u style="text-decoration-style:double ;">NOTE: </u> some of the input type doesn't display properly without the value attribute. Such as the button, reset and submit type. 
+        </p>
+    </div>
+    <div>
+        <fieldset style=" height:15em ; width:19.5em ; overflow:auto ;" >
+        <code id="input">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+            <</span>form></br>
+               <</span>p><wh>name</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"name"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>number</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"number"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>email</wh><</span>/p></br>
+            <</span>input </wh>type=</wh><gr>"email"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>password</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"password"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>tel</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"tel"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>time</wh><</span>/p></br>
+            <</span>input </wh>type=</wh><gr>"time"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>date</wh><</span>/p></br>
+            <</span>input </wh>type=</wh><gr>"date"</gr>><</span>br/><</span>br/></br></br>
+            
+            <</span>p><wh>radio</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"radio"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>checkbox</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"checkbox"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>button</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"button"</gr> <wh>value=</wh>"button"><</span>br/><</span>br/></br></br>
+            <</span>p><wh>reset</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"reset"</gr> <wh>value=</wh><gr>"reset"</gr>><</span>br/><</span>br/></br></br>
+            <</span>p><wh>submit</wh><</span>/p></br>
+            <</span>input <wh>type=</wh><gr>"submit"</gr> <wh>value=</wh><gr>"submit"</gr>><</span>br/><</span>br/>
+          <</span>/form>
+               </br></br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('input')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; color:black ; height:15em ; width:19.5em ; overflow:auto ;">
+        <div>
+            <p>name</p>
+            <input type="name"></br></br>
+            <p>number</p>
+            <input type="number"></br></br>
+            <p>email</p>
+            <input type="email"></br></br>
+            <p>password</p>
+            <input type="password"></br></br>
+            <p>tel</p>
+            <input type="tel"></br></br>
+             <p>time</p>
+            <input type="time"></br></br>
+             <p>date</p>
+            <input type="date"></br></br>
+            <p>radio</p>
+            <input type="radio"></br></br>
+            <p>checkbox</p>
+            <input type="checkbox"></br></br>
+            <p>button</p>
+            <input type="button" value="button"></br></br>
+            <p>reset</p>
+            <input type="reset" value="reset"></br></br>
+            <p>submit</p>
+            <input type="submit" value="submit"></br></br>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <p>
+            We have the label element, this element is the identifier for each input in the form, the only attribute which the label tag carries is the ' for=" " ' attribute which contains the name of the input inside the input name (name=" ") attribute. 
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="label">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <pre>
+            <</span>form>
+                   
+<</span>label <wh>for=</wh><gr>"full name"</gr>></br><wh>Full name:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"full name"</gr>>
+     <</span>br/><</span>br/>         
+<</span>label <wh>for=</wh><gr>"tel no"</gr>></br><wh>phone no:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"tel"</gr> </br><wh>name=</wh><gr>"tel no"</gr>>
+        <</span>br/><</span>br/>       
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>Yes</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>No</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+           <</span>/form>
+               </pre>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('label')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em; color:black ;">
+        <div>
+           <form>
+            <label for="full name">Full name:</label>
+               <input type="text" name="full name"></br></br>
+               <label for="tel no">phone no:</label>
+               <input type="tel" name="tel no"></br></br>
+               <label for="choice">Yes</label>
+               <input type="radio" name="choice">
+               <label for="choice">No</label>
+               <input type="radio" name="choice">
+               </form>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        This label helped the radio to choose one only because the text in the name attribute for both yes and no radio type are the same so it allows it to select one only. 
+    </div>
+    <div>
+        <p>
+            The button tag is an element that declares a button to the browser the button type attribute could contain submit or reset. 
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="button">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <pre>
+            <</span>form>
+                   
+<</span>label <wh>for=</wh><gr>"full name"</gr>></br><wh>Full name:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"full name"</gr>>
+    <</span>br/><</span>br/>          
+<</span>label <wh>for=</wh><gr>"tel no"</gr>></br><wh>phone no:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"tel"</gr> </br><wh>name=</wh><gr>"tel no"</gr>>
+  <</span>br/><</span>br/>             
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>Yes</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>No</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>><</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"submit"</gr>></br><wh>submit</wh><</span>/button></br><</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"reset"</gr>></br><wh>reset</wh><</span>/button>
+           <</span>/form>
+               </pre>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('button')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ;  color:black ;">
+        <div>
+           <form>
+            <label for="full name">Full name:</label>
+               <input type="text" name="full name"></br></br>
+               <label for="tel no">phone no:</label>
+               <input type="tel" name="tel no"></br></br>
+               <label for="choice">Yes</label>
+               <input type="radio" name="choice">
+               <label for="choice">No</label>
+               <input type="radio" name="choice"></br></br>
+               <input type="submit"></br></br>
+               <input type="reset">
+               </form>
+        </div>
+    </fieldset>
+    </div></br>
+     <div>
+      <p>
+          The text area tag (<</span>textarea><</span>/textarea>) is an html element which gathers feed back from users, it is used to get users idea on how your website or business looks and suggestions on how you can improve it. 
+      </p>
+  </div>
+  <div>
+      <fieldset style=" height:15em ; width:19.5em ; overflow:auto ;" >
+        <code id="textarea">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+                             <pre>
+            <</span>form>
+ <</span>p>
+   <</span>center>
+     <</span>h2><wh>We want the best.</wh><</span>/h2>
+   <</span>/center>
+<</span>/p>
+<</span>label <wh>for=</wh><gr>"full name"</gr>></br><wh>Full name:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"full name"</gr>>
+      <</span>br/><</span>br/>        
+<</span>label <wh>for=</wh><gr>"tel no"</gr>></br><wh>phone no:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"tel"</gr> </br><wh>name=</wh><gr>"tel no"</gr>>
+       <</span>br/><</span>br/>        
+<</span>p>
+<wh>Did you enjoy our service?</wh>
+<</span>/p>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>Yes</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>No</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>><</span>br/><</span>br/>
+
+<</span>p>
+<wh>what do you think about us?</wh>
+<</span>/p>
+
+<</span>label <wh>for=</wh><gr>"feedback"</gr>></br><wh>Feed back :</wh><</span>/label>
+<</span>textarea <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"feedback"</gr>><</span>/textarea>
+<</span>br/><</span>br/>
+<</span>button <wh>type=</wh><gr>"submit"</gr>></br><wh>submit</wh><</span>/button></br><</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"reset"</gr>></br><wh>reset</wh><</span>/button>
+           <</span>/form>
+               </pre>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('textarea')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style=" height:15em ; width:19.5em ; overflow:auto ; background-color:White ; color:black ;">
+        <div>
+           <form>
+               <p>
+                   <center>
+                   <h2>We want the best.</h2>
+                   </center>
+               </p>
+            <label for="full name">Full name:</label>
+               <input type="text" name="full name"></br></br>
+               <label for="tel no">phone no:</label>
+               <input type="tel" name="tel no"></br></br>
+               <p>Did you enjoy our service? </p>
+               <label for="choice">Yes</label>
+               <input type="radio" name="choice">
+               <label for="choice">No</label>
+               <input type="radio" name="choice"></br></br>
+               <p>what do you think about us? </p>
+               <label for="feedback">Feed back:</label>
+               <textarea type="text" name="feedback"></textarea>
+               </br></br>
+               <input type="submit"></br></br>
+               <input type="reset">
+               </form>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <p>
+           <h4>We move to drop down list</h4>
+           <span>
+               The Drop down list is the combination of html element tags (<</span>select> and <</span>option>) to create a drop down list of items. The <</span>option> tag is nested inside the <</span>select>. 
+           </span>
+        </p>
+    </div>
+     <div>
+      <fieldset style=" height:15em ; width:19.5em ; overflow:auto ;" >
+        <code id="drop">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+        <pre>
+            <</span>form>
+ <</span>p>
+   <</span>center>
+     <</span>h2><wh>We want the best.</wh><</span>/h2>
+   <</span>/center>
+<</span>/p>
+<</span>label <wh>for=</wh><gr>"full name"</gr>></br><wh>Full name:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"full name"</gr>>
+     <</span>br/><</span>br/>         
+<</span>label <wh>for=</wh><gr>"tel no"</gr>></br><wh>phone no:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"tel"</gr> </br><wh>name=</wh><gr>"tel no"</gr>>
+      <</span>br/><</span>br/>         
+<</span>label <wh>for=</wh><gr>"gender"</gr>>
+<wh>Gender:</wh>
+<</span>/label>
+  <</span>select <wh>name=</wh><gr>"gender"</gr>>
+      <</span>option><wh>male</wh><</span>/option>
+      <</span>option><wh>Female</wh><</span>/option>
+  <</span>/select>
+             <</span>br/><</span>br/>  
+<</span>p>
+<wh>Did you enjoy our service?</wh>
+<</span>/p>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>Yes</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>No</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>><</span>br/><</span>br/>
+
+<</span>p>
+<wh>what do you think about us?</wh>
+<</span>/p>
+
+<</span>label <wh>for=</wh><gr>"feedback"</gr>></br><wh>Feed back :</wh><</span>/label>
+<</span>textarea <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"feedback"</gr>><</span>/textarea>
+<</span>br/><</span>br/>
+<</span>button <wh>type=</wh><gr>"submit"</gr>></br><wh>submit</wh><</span>/button></br><</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"reset"</gr>></br><wh>reset</wh><</span>/button>
+           <</span>/form>
+               </pre>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('drop')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style=" height:15em ; width:19.5em ; overflow:auto ; background-color:White ; color:black ;">
+        <div>
+           <form>
+               <p>
+                   <center>
+                   <h2>We want the best.</h2>
+                   </center>
+               </p>
+            <label for="full name">Full name:</label>
+               <input type="text" name="full name"></br></br>
+               <label for="tel no">phone no:</label>
+               <input type="tel" name="tel no"></br></br>
+               <label for="gender">Gender:</label>
+               <select name="gender">
+                   <option>male</option>
+                   <option>Female</option>
+               </select>
+               <p>Did you enjoy our service? </p>
+               <label for="choice">Yes</label>
+               <input type="radio" name="choice">
+               <label for="choice">No</label>
+               <input type="radio" name="choice"></br></br>
+               <p>what do you think about us? </p>
+               <label for="feedback">Feed back:</label>
+               <textarea type="text" name="feedback"></textarea>
+               </br></br>
+               <input type="submit"></br></br>
+               <input type="reset">
+               </form>
+        </div>
+    </fieldset>
+    </div></br>
+  <div>
+      <p>
+          Now if we add the action attribute to our form tag, it will take us to another page if we click the submit button. Also if we include the 'required' attribute to our in put it would not submit the form useless that space is filled, the required attribute is a valueless attribute. 
+      </p>
+  </div>
+  <fieldset style=" height:15em ; width:19.5em ; overflow:auto ;">
+        <code id="required">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+ <pre>
+ <</span>form <wh>action=</wh><gr>"new page.html"</gr>>
+ <</span>p>
+   <</span>center>
+     <</span>h1><wh>HOTEL FORM</wh><</span>/h1>
+   <</span>/center>
+<</span>/p>
+
+ <</span>p>
+   <</span>center>
+     <</span>h2><wh>We want the best.</wh><</span>/h2>
+   <</span>/center>
+<</span>/p>
+
+<</span>label <wh>for=</wh><gr>"full name"</gr>></br><wh>Full name:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"full name"</gr><wh>required </wh>>
+             
+             <</span>br/><</span>br/> 
+<</span>label <wh>for=</wh><gr>"tel no"</gr>></br><wh>phone no:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"tel"</gr> </br><wh>name=</wh><gr>"tel no"</gr><wh>required </wh>>
+         
+         <</span>br/><</span>br/>      
+<</span>label <wh>for=</wh><gr>"gender"</gr>>
+<wh>Gender:</wh>
+<</span>/label>
+  <</span>select <wh>name=</wh><gr>"gender"</gr>>
+      <</span>option><wh>male</wh><</span>/option>
+      <</span>option><wh>Female</wh><</span>/option>
+  <</span>/select>
+            <</span>br/><</span>br/>   
+<</span>label <wh>for=</wh><gr>"date"</gr>></br><wh>Date Issued:</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"date"</gr> </br><wh>name=</wh><gr>"date"</gr><wh>required </wh>><</span>br/><</span>br/>
+               
+<</span>p>
+<wh>Did you enjoy our service?</wh>
+<</span>/p>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>Yes</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>>
+               
+<</span>label <wh>for=</wh><gr>"choice"</gr>></br><wh>No</wh><</span>/label>
+<</span>input <wh>type=</wh><gr>"radio"</gr> </br><wh>name=</wh><gr>"choice"</gr>><</span>br/><</span>br/>
+
+<</span>p>
+<wh>what do you think about us?</wh>
+<</span>/p>
+
+<</span>label <wh>for=</wh><gr>"feedback"</gr>></br><wh>Feed back :</wh><</span>/label>
+<</span>textarea <wh>type=</wh><gr>"text"</gr> </br><wh>name=</wh><gr>"feedback"</gr>><</span>/textarea>
+<</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"submit"</gr>></br><wh>submit</wh><</span>/button></br><</span>br/><</span>br/>
+
+<</span>button <wh>type=</wh><gr>"reset"</gr>></br><wh>reset</wh><</span>/button>
+ <</span>/form>
+               </pre>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('required')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="width:19.5em ; overflow:auto ; background-color:White ; color:black ;">
+        <div>
+           <form action="b.html" target="b">
+                <p>
+                   <center>
+                   <h1>HOTEL FORM</h1>
+                   </center>
+               </p>
+               
+               <p>
+                   <center>
+                   <h1>We want the best.</h1>
+                   </center>
+               </p>
+            <label for="full name">Full name:</label>
+               <input type="text" name="full name" required ></br></br>
+               <label for="tel no">phone no:</label>
+               <input type="tel" name="tel no" required ></br></br>
+               <label for="gender">Gender:</label>
+               <select name="gender">
+                   <option>male</option>
+                   <option>Female</option>
+               </select>
+               </br></br>
+               <label for="date">Date Issued:</label>
+               <input type="date" name="date" required ></br></br>
+               <p>Did you enjoy our service? </p>
+               <label for="choice">Yes</label>
+               <input type="radio" name="choice">
+               <label for="choice">No</label>
+               <input type="radio" name="choice"></br></br>
+               <p>what do you think about us? </p>
+               <label for="feedback">Feed back:</label>
+               <textarea type="text" name="feedback"></textarea>
+               </br></br>
+               <input type="submit"></br></br>
+               <input type="reset">
+               </form>
+        </div>
+    </fieldset>
+    </div></br>
+    <fieldset style="background-color:White ; height:10em;">
+    <iframe name="b" style="height:10em ; width:19.5em ;"></iframe>
+    </fieldset>
+    </br>
+    <div>
+        <p>
+            We have come to the end of the HTML class. Here you learnt the basics and structure of website development, you will also have to learn the CASCADING STYLESHEET to make your Web page look beautiful and attractive to visitors and JAVASCRIPT to give your website interactive features link change background, animations, add camera features, add microphone features, and so much more amazing things. But first you have to learn CASCADING STYLESHEET before JAVASCRIPT. 
+        </p></br>
+        <h2 style="text-transform:uppercase ; text-align:center ; font-weight:big ; color:#ce00ff ;">
+            Thank you for learning with html groom. 
+        </h2>
+    </div></br>
+    <div>
+        <button style="position: absolute; right: 0em; text-decoration-line:none ; color: White; margin-right:1em ; background:#aaa139 ;" onclick="myfunction()">next</button>
+        <button style="position: absolute; left: 0em; text-decoration-line:none ; color: White; margin-left:1em ; background:#aaa139 ;"  style="background-color:#aaa139 ;"><a href="LH video.html" style="text-decoration-line:none ; color: White;">previous</a></button>
+    </div>
+    <br></br>
+    <script>
+  function myfunction(){
+        if(confirm("🎉 CONGRATULATIONS🎉 you have successfully learnt HTML with HTML GROOM.                                     if you wish to get updated on the CASCADING STYLESHEET(CSS) class release, 'click OK'")){
+  window.location.href = "more.html";
+}} 
+    </script>
+    <script src="Learn HTML.js"></script>
+</body>
+</html>
+
