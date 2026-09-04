@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML GROOM</title>
+    <link rel="stylesheet" href="Learn HTML.css">
+</head>
+<body>
+    <h4>
+        <center>
+        IN THIS CLASS WE WILL LEARN ABOUT LINE BREAK, HORIZONTAL RULE, AND NON BREAKABLE SPACE
+        </center>
+    </h4><hr>
+    <div>
+        <h4>
+            What is line break? 
+        </h4>
+        <p>
+            Line break in html gives an extra line in a text, it is an empty element <</span>br />
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="break">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <wh>
+                  Row row row your boat,</wh><</span>br/> <wh>gently down the stream,</wh> <</span>br/><wh>merrily merrily merrily merrily, </wh><</span>br/><wh>life is but a dream. </br>
+               </wh>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('break')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em; color:black ;">
+        <div>
+            Row row row your boat, </br>gently down the stream, </br>merrily merrily merrily merrily, </br>life is but a dream. 
+        </div>
+    </fieldset>
+    </div>
+    <div>
+        <h4>
+            What is horizontal rule? 
+        </h4>
+        <p>
+           Horizontal rule is a line that cross across the page horizontally. 
+        </p>
+    </div>
+    <fieldset>
+        <code id="rule">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <</span>hr/></br>
+               <wh>
+                  Row row row your boat,</wh><</span>br/> <wh>gently down the stream,</wh> <</span>br/><wh>merrily merrily merrily merrily, </wh><</span>br/><wh>life is but a dream. 
+               </wh></br>
+               <</span>hr/></br>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('rule')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; height:10em; color:black ;">
+        <div>
+            <hr/>
+            Row row row your boat, </br>gently down the stream, </br>merrily merrily merrily merrily, </br>life is but a dream. 
+            <hr/>
+        </div>
+    </fieldset>
+    </div>
+    <div>
+        <h4>
+        What is non breakable space? 
+        </h4>
+        <p>
+            Non breakable space (&</span>nbsp) is a character entity that give a space in the browser without moving in to the next line. This character entities are not surrounded by angle brackets they are declared with "&", "&#" or "&#x". 
+        </p>
+        <p>
+            The "&" is used for name encoding (&entity_name), the "&#" is used for decimal encoding (&#entity_number) and the "&#x" is used for hexadecimal (&#x</span>entity_hexadecimal). 
+        </p>
+    </div>
+    <div>
+        <fieldset>
+        <code id="entity">
+            <<span>!DOCTYPE<wh> html</wh></span>><br>
+            <<span>html <wh>lang=</wh><gr>"en"</gr></span>><br>
+            <</span>head</span>><br>
+                &nbsp&nbsp <</span>meta <wh>charset=</wh><gr>"UTF-8"</gr></span>><br>
+                &nbsp&nbsp <<span>title</span>><wh>Page title</wh><<span>/title</span>><br>
+                
+            <<span>/head</span>><br>
+            <<span>body</span>><br>
+               </br>
+               <gr><</span>!-- These are entity names --></gr>
+               <wh>
+               I am <wh>&</span>nbsp</wh> apart </br></wh><</span>br/>
+               <wh>&</span>copy I am copyright</wh> </br><</span>br/>
+               <wh>&</span>reg I am registered trademark</wh><</span>br/>
+               </br></br>
+               <gr><</span>!-- These are entity numbers --></gr></br>
+               <wh>
+               I am <wh>&#</span>160</wh> apart </br></wh><</span>br/>
+               <wh>&#</span>169 I am copyright</wh> </br><</span>br/>
+               <wh>&#</span>174 I am registered trademark</wh><</span>br/>
+               </br></br>
+               <gr><</span>!-- These are entity hexadecimal --></gr></br>
+               <wh>
+               I am <wh>&#x</span>00A0</wh> apart </wh></br><</span>br/>
+               <wh>&#x</span>00A9 I am copyright</wh> </br><</span>br/>
+               <wh>&#x</span>00AE I am registered trademark</wh><</span>br/>
+               </br>
+               </br>
+            <<span>/body</span>><br>
+            <<span>/html</span>><br>
+        </code>
+    </fieldset>
+    <span>
+        <button onclick="copy('entity')">copy</button>
+    </span>
+    <br>
+    <h3>
+        OUTPUT 
+    </h3>
+    <br><br>
+    <fieldset style="background-color:White ; color:black ;">
+        <div>
+            <!-- These are entity names -->
+            I am &nbsp apart</br>
+            &copy I am copyright</br>
+           &reg I am registered trademark</br></br>
+            <!-- These are entity numbers -->
+            I am &#160 apart</br>
+            &#169 I am copyright</br>
+           &#174 I am registered trademark</br></br>
+            <!-- These are entity hexadecimal -->
+            I am &#x00A0 apart</br>
+            &#x00A9 I am copyright</br>
+           &#x00AE I am registered trademark</br></br>
+        </div>
+    </fieldset>
+    </div></br>
+    <div>
+        <button style="position: absolute; right: 0em; text-decoration-line:none ; color: White; margin-right:1em ; background:#aaa139 ;"><a href="LH subscript.html" style="text-decoration-line:none ; color: White;">next</a></button>
+        <button style="position: absolute; left: 0em; text-decoration-line:none ; color: White; margin-left:1em ; background:#aaa139 ;" style="background-color:#aaa139 ;"><a href="LH text.html" style="text-decoration-line:none ; color: White;">previous</a></button>
+    </div>
+    <br></br>
+    <script src="Learn HTML.js"></script>
+</body>
+</html>
