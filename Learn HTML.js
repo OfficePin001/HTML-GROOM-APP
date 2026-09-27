@@ -25,7 +25,7 @@ const themes = [
 
     // 2. Change theme and save it
     function changeTheme() {
-      const theme = themes[i];
+      const theme = themes[i=i];
       applyTheme(theme.bg, theme.text);
 
       // save to browser memory
